@@ -13,4 +13,9 @@ errorBox.textContent = '';
 status.textContent = 'Caricamento...';
 // qui ho disabilitato il bottone quando sta lavorando per creare le email 
 btn.disabled = true; 
+
+//qui prendo il numero delle mail che devo generare che per default sono  10
+const n = Number(howMany.value) || 10;
+// qui Creo un array dove andrò a salvare le email
+const emails = [];
 });
